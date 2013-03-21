@@ -28,6 +28,42 @@ public class Pessoa{
       nome="";
       nascimento=new Date();
     }
+    public void setAddEmail(Email obj){
+        if(!emails.contains(obj)){
+            emails.add(obj);
+        }   
+    }
+    
+    public void removeEmail(Email obj){
+        if(emails.contains(obj)){
+            emails.remove(obj);
+        }
+    
+    }
+    public List<Email> getEmails() {
+        return emails;
+    }
+
+    public void setADDEmails(List<Email> emails) {
+        this.emails = emails;
+    }
+
+    public List<Endereco> getEnderecos() {
+        return enderecos;
+    }
+
+    public void setEnderecos(List<Endereco> enderecos) {
+        this.enderecos = enderecos;
+    }
+
+    public List<Telefone> getTelefones() {
+        return telefones;
+    }
+
+    public void setTelefones(List<Telefone> telefones) {
+        this.telefones = telefones;
+    }
+        
     public int getId(){
       return id;		
     }
