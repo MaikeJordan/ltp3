@@ -11,6 +11,7 @@
 package br.edu.ifnmg.tads.atividades.ltp3;
 
 import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 
@@ -27,6 +28,7 @@ public class Pessoa{
       id=0;
       nome="";
       nascimento=new Date();
+      emails = new LinkedList<Email>();
     }
     public void setAddEmail(Email obj){
         if(!emails.contains(obj)){
