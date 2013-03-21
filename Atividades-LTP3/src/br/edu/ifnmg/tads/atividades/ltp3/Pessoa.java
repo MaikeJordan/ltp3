@@ -11,6 +11,7 @@
 package br.edu.ifnmg.tads.atividades.ltp3;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Objects;
 
 public class Pessoa{
@@ -18,7 +19,10 @@ public class Pessoa{
     private int id;	
     private String nome;
     private Date nascimento;
-
+    private List <Email> emails;
+    private List <Endereco> enderecos;
+    private List <Telefone> telefones;
+    
     public Pessoa(){
       id=0;
       nome="";
